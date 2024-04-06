@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+</head>
+<style>
+    @font-face {
+        font-family: reo;
+        src: url(./NBInternationalProBoo\ \(1\).ttf);
+    }
+
+    @font-face {
+        font-family: reo1;
+        src: url(./Rejouice-Headline\ \(1\).ttf);
+    }
+
+    * {
+
+        font-family: reo1;
+
+    }
+
+    html {
+        overflow: hidden;
+    }
+
+    *::selection {
+        background-color: rgb(252, 164, 154);
+    }
+
+    body[theme="black"] {
+        background-color: black;
+    }
+
+    body[theme="black"] .section {
+        color: rgb(255, 255, 255);
+    }
+
+    body[theme="cyan"] {
+        background-color: #FFFFFF;
+    }
+
+    body[theme="cyan"] .section {
+        color: #184350;
+    }
+
+    body[theme="salmon"] {
+        background-color: #EE9D71;
+    }
+
+    body[theme="salmon"] {
+        color: rgb(94, 50, 45);
+    }
+
+    body[theme="white"] {
+        background-color: white;
+    }
+
+    body[theme="white"] {
+        color: rgb(71, 71, 71);
+    }
+
+    body {
+        transition: background-color ease-in-out .5s;
+    }
+
+    .vdodiv {
+        clip-path: circle(var(--clip)at 50% 50%);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Work_page {
+        background-image: url("<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='87' height='50.232' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M0 54.424l14.5-8.373c4.813 2.767 9.705 5.573 14.5 8.37l14.5-8.373V29.303M0 4.193v16.744l-14.5 8.373L0 37.68l14.5-8.374V12.562l29-16.746m43.5 58.6l-14.5-8.37v-33.49c-4.795-2.797-9.687-5.603-14.5-8.37m43.5 25.111L87 37.67c-4.795-2.797-24.187-13.973-29-16.74l-14.5 8.373-14.5-8.37v-33.489m72.5 8.365L87 4.183l-14.5-8.37M87 4.183v16.745L58 37.673v16.744m0-66.976V4.185L43.5 12.56c-4.795-2.797-24.187-13.973-29-16.74L0 4.192l-14.5-8.37m29 33.484c4.813 2.767 9.705 5.573 14.5 8.37V54.42'  stroke-linecap='square' stroke-width='1' stroke='hsla(174, 100%, 29%, 0.74)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-0.464)' fill='url(#a)'/></svg>");
+    }
+</style>
+
+<body theme="black">
+    <div class="main w-full">
+
+
+
+
+
+        <nav class="bg-zinc-100 border-gray-200  ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        class="h-7 w-10 object-cover object-right rounded-full" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">Adhunik WoodPecker</span>
+                </a>
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-zinc-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  "
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   ">
+                        <li>
+                            <a href="index.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"> Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"> Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"> Blog</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto  md:dark:hover:text-blue-500  dark:hover:bg-gray-700  md:dark:hover:bg-transparent">Creative Concepts 
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-zinc-300 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-zinc-700 dark:text-zinc-200"
+                                    aria-labelledby="dropdownLargeButton">
+                                 
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2
+                                        text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50
+                                            ">Kitchen<svg
+                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown"
+                                            class="z-10 hidden rounded-lg shadow w-44 dark:bg-zinc-300">
+                                            <ul class="py-2 text-sm "
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="L_shaped_kitchen.html"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">L-Shaped Kitchens</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">U-Shaped Kitchens
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50"> Parallel Kitchens
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50"> Island Kitchens
+                                                   </a>
+                                                </li>
+                                              
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2
+                                        text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50
+                                            ">Wardrobe<svg
+                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown2"
+                                            class="z-10 hidden rounded-lg shadow w-44 dark:bg-zinc-300">
+                                            <ul class="py-2 text-sm "
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">Sliding Door Wardrobe</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">
+                                                    Mirror Wardrobe</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">
+                                                    Walk in Wardrobe
+</a>
+                                                </li>
+                                              
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown3"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2
+                                        text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50
+                                            ">TV Unit Design<svg
+                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown3"
+                                            class="z-10 hidden rounded-lg shadow w-44 dark:bg-zinc-300">
+                                            <ul class="py-2 text-sm "
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">Floating TV Unit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">Wall-Mounted <br> Floating TV Units
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                    class="block px-4 py-2 text-zinc-600  hover:bg-zinc-100 dark:hover:bg-zinc-500 dark:hover:text-zinc-50">Multi-Functional <br>  TV Consoles 
+                                                        </a>
+                                                </li>
+                                              
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                              
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contactUs.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
+                                us</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div data-color="cyan" class="home section w-full h-[100vh] relative ">
+            <div class="w-full sticky top-0 left-0">
+                <div class="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
+                    <h1>
+                        We build Designs. <br>Interiors . Design Ideas
+                        . <br> For real people. Real
+                        lives.
+                    </h1>
+                </div>
+                <div style="--clip:100%"
+                    class=" z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden">
+                    <video muted autoplay loop
+                        class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        src="./Modern Interior Design Ideas Video.mp4"></video>
+                </div>
+
+                <div class="marqueesContainer w-full h-screen relative overflow-hidden">
+                    <div class="heading absolute top-[7%] left-1/2 -translate-x-1/2">
+                        <h1 class="text-xl font-regular w-60 text-center">
+                            Crafting a new paradigm of Interiors, one that is
+                        </h1>
+                    </div>
+                    <div class="slidesm w-[90%] scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                        <div class="row lft -translate-x-1/2 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/3037434/pexels-photo-3037434.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    U-Shaped Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    L-Shape Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Island Kitchens
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-1/3 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    U-Shaped Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    L-Shape Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Island Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Indian Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Cabinet Designs
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Parallel Kitchens
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row lft -translate-x-2/3 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Sliding Door Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Mirror Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Walk in Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Open Wooden Storage
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Multicoloured Drawer
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Integrated Study Table
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-3/4 w-full flex items-center gap-10  whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Wall-Mounted
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Open Wooden TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Modern Blue And Dark Wood TV Unit Design With Cabinet Storage
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    useful
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    intuitive
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%'
+                xmlns='http://www.w3.org/2000/svg'>
+                <defs>
+                    <pattern id='a' patternUnits='userSpaceOnUse' width='87' height='50.232'
+                        patternTransform='scale(1) rotate(0)'>
+                        <rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)' />
+                        <path
+                            d='M0 54.424l14.5-8.373c4.813 2.767 9.705 5.573 14.5 8.37l14.5-8.373V29.303M0 4.193v16.744l-14.5 8.373L0 37.68l14.5-8.374V12.562l29-16.746m43.5 58.6l-14.5-8.37v-33.49c-4.795-2.797-9.687-5.603-14.5-8.37m43.5 25.111L87 37.67c-4.795-2.797-24.187-13.973-29-16.74l-14.5 8.373-14.5-8.37v-33.489m72.5 8.365L87 4.183l-14.5-8.37M87 4.183v16.745L58 37.673v16.744m0-66.976V4.185L43.5 12.56c-4.795-2.797-24.187-13.973-29-16.74L0 4.192l-14.5-8.37m29 33.484c4.813 2.767 9.705 5.573 14.5 8.37V54.42'
+                            stroke-linecap='square' stroke-width='1' stroke='hsla(174, 100%, 29%, 0.74)' fill='none' />
+                    </pattern>
+                </defs>
+                <rect width='800%' height='800%' transform='translate(0,-0.464)' fill='url(%23a)' />
+            </svg>")
+
+        </div>
+
+
+        
+        <div class="w-screen h-screen flex ">
+
+            <div class="h-full w-5/12  "
+                style=" background-image: url('https://images.pexels.com/photos/7602820/pexels-photo-7602820.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load'); background-size: cover; background-position: center; filter: brightness(0.9);">
+                <h1 class="font-semibold text-6xl my-[10%] text-center ">
+                    We Make Your <br><span class="text-cyan-900">Home</span> Better
+                </h1>
+                <p class="text-left w-[60%] mx-auto text-1xl font-normal">
+                    We are taking care of the thousands of small details necessary to build a unique home specifically
+                    for
+                    your lifestyle.
+                </p>
+                <button class="bg-[#184350] py-3 px-9 mx-[20%] text-white my-[4%]">
+                    Read More
+                </button>
+                <div class="row flex text-center mt-9">
+                    <div class="h-[30%] w-6/12">
+
+                        <h1 class="text-2xl">DURABILITY</h1>
+                        <p class="text-sm ">Lasting 10 Years</p>
+                    </div>
+                    <div class="h-[30%] w-6/12">
+                        <h1 class="text-2xl">MODERN INTERIOR</h1>
+                        <p>Exclusive 10 year warrantly</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="h-full w-7/12">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left
+                        " src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-right
+                        " src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left
+                        " src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left "
+                                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div data-color="cyan" class="craft section w-full flex gap-10 justify-between  relative items-start"
+            style=" background-image: url(''); background-size: cover; background-position: center; filter: brightness(1);">
+            <div class=" w-full mt-3"
+                style=" background-image: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(1);">
+                <p class="text-2xl font-semibold text-center p-3">
+                    Discover the reasons <br> to choose us.
+                </p>
+                <div class="row flex p-5  gap-6 justify-around text-center ">
+                    <div class="w-3/12 text-center rounded-xl bg-[#DEDEDE] p-4 border border-[#184350]">
+
+                        <img class="h-[100px] w-[100px] object-cover text-center mx-auto my-auto"
+                            src=" Untitled-design.svg" alt="">
+                        <p class="pb-1 text-2xl font-semibold">
+                            Exceptional Design
+                        </p>
+                        <p> We visualize your dream space <br> in 3D beforehand, ensuring <br> it's perfect for you.</p>
+                    </div>
+                    <div class="w-3/12  rounded-xl bg-[#DEDEDE] border border-[#184350]">
+
+                        <p class="pt-5 text-2xl font-semibold">
+                            Premium Craftsmanship
+                        </p>
+                        <p class="pt-2">
+                            We craft custom furniture with <br> utmost care and skill, guaranteeing <br> top-quality
+                            products.</p>
+                        <img class=" mt-1 h-[100px] w-[100px] object-cover text-center mx-auto my-auto"
+                            src="Untitled-design-_1_.svg " alt="">
+                    </div>
+                    <div class="w-3/12  rounded-xl bg-[#DEDEDE] border border-[#184350] ">
+                        <img class="mt-2 h-[100px] w-[100px] object-cover text-center mx-auto my-auto"
+                            src="Untitled-design-_2_.svg" alt="">
+                        <p class="p-1 text-2xl font-semibold"> Transparent Communication
+
+                        </p>
+                        <p>
+                            We keep you in the loop every <br> step of the way, so you're <br> never left wondering.</p>
+                    </div>
+                    <div class="w-3/12  rounded-xl bg-[#DEDEDE] border border-[#184350] ">
+                        <p class="mt-4 p-1 text-2xl font-semibold">On-time delivery</p>
+                        <p>
+                            Complete project delivered <br> in 6 weeks or less</p>
+                        <img class=" mt-2 h-[100px] w-[100px] object-cover text-center mx-auto my-auto"
+                            src="Untitled-design-_3_.svg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="w-full h-full  p-4 bg-zinc-100 ">
+
+            <div class="w-full text-center">
+
+                <p class=" text-4xl">
+                    Discover the Process <br> Unveiling in 3 Simple Steps <br>
+                </p>
+                <p class=" text-slate-500 mt-3">Unlock The Process For Your Ideal All Interior Design</p>
+            </div>
+
+            <div class="row flex justify-around p-5 ">
+
+                <div class="w-4/12  p-9">
+                    <div
+                        class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl ">
+                        <div
+                            class="relative  mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                            <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="card-image" />
+                        </div>
+                        <div class="p-6 text-center">
+
+                            <h5
+                                class="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                Show your style and <br> space optimization.
+                            </h5>
+                            <p class="block  text-base antialiased font-light leading-relaxed text-inherit">
+                                Dream big for your space! Share your inspiration, goals, and budget, and let us <br>
+                                help you design a space you'll adore.
+                            </p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="row flex text-center">
+
+                                <h1 class="bg-black  w-40  rounded-full text-1xl text-white mx-auto block p-2">STEP 1
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow w-20 h-20 rounded-full  mx-auto my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <div class="w-4/12 p-9">
+                    <div
+                        class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl ">
+                        <div
+                            class="relative  mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                            <img src="https://images.unsplash.com/photo-1538944570562-2c9cb7857097?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHJlY29uc3RydWN0JTIwa2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="card-image" />
+                        </div>
+                        <div class="p-6 text-center">
+                            <h5
+                                class="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                Revitalize your space.
+                            </h5>
+                            <p class="block  text-base antialiased font-light leading-relaxed text-inherit">
+                                Your dedicated designer will collaborate with you individually to transform your vision
+                                into reality, delivering a comprehensive 3D rendering of your specific space.
+                            </p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="row flex text-center">
+
+                                <h1 class="bg-black  w-40  rounded-full text-1xl text-white mx-auto block p-2">STEP 2
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow w-20 h-20 rounded-full  mx-auto my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <div class="w-4/12 p-9">
+                    <div
+                        class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl ">
+                        <div
+                            class="relative  mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                            <img src="https://images.unsplash.com/photo-1649185885009-e2fb1a9a57b5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8"
+                                alt="card-image" style="object-position: bottom; background-size: cover;" />
+                        </div>
+                        <div class="p-6 text-center">
+                            <h5
+                                class="block mb-2  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                Get Professional Installation & Shop with Confidence
+                            </h5>
+                            <p class="block  text-base antialiased font-light leading-relaxed text-inherit">
+                                Browse and purchase designs effortlessly in one simple transaction & enjoy exclusive
+                                discounts.
+                            </p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="row flex text-center">
+
+                                <h1 class="bg-black  w-40  rounded-full text-1xl text-white mx-auto block p-2">STEP 3
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class=" h-full flex text-center p-5 bg-[#F4F4F4] m-4">
+            <div class="w-[40%] ] "
+                style=" background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(1); ">
+                <div class="flex  items-center justify-center ">
+                    <div class="">
+
+                        <div
+                            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                            <div class="h-96 w-auto">
+                                <img class="h-full w-full object-cover transition-transform duration-500  group-hover:scale-125"
+                                    src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                                <h1 class="font-dmserif text-3xl font-bold text-white">Kitchen Designs</h1>
+                                <p
+                                    class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    Create your dream kitchen with our versatile and customizable design options.</p>
+                                <button
+                                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                    More</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-[60%] h-full p-5 m-5 text-center ">
+
+                <h1 class="text-5xl mb-3">Modular Kitchen Designs</h1>
+                <p class="">Transform your space with our captivating Modular Kitchen Designs, <br> where appliances and
+                    counter space gracefully align against a single wall. <br> This layout not only optimizes
+                    functionality but also elevates your kitchen to the centerpiece <br> of your home, perfect for
+                    elongated areas or the stylish simplicity of studio flats.</p>
+                <div class="show_m mt-5">
+                    <button
+                        class="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5">See
+                        More</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="h-full flex text-center p-5 bg-[#F4F4F4] m-4">
+
+            <div class="w-[60%] h-full p-5 m-5 text-center ">
+
+                <h1 class="text-5xl mb-3">Wardrobe Designs</h1>
+                <p class="">Discover our exquisite Wardrobe Designs, where functionality meets elegance. <br> Each
+                    design showcases a harmonious blend of style and storage, <br> offering a seamless solution to
+                    elevate your space while catering to your organizational needs. <br> Embrace luxury and efficiency
+                    with our curated wardrobe collections</p>
+                <div class="show_m mt-5">
+                    <button
+                        class="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5">See
+                        More</button>
+                </div>
+
+            </div>
+
+            <div class="w-[40%] ] "
+                style=" background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center; filter: brightness(1); ">
+                <div class="flex  items-center justify-center ">
+                    <div class="">
+
+                        <div
+                            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                            <div class="h-96 w-auto">
+                                <img class="h-full w-full object-cover transition-transform duration-500  group-hover:scale-125"
+                                    src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                                <h1 class="font-dmserif text-3xl font-bold text-white">Wardrobe Designs</h1>
+                                <p
+                                    class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    Effortlessly blend style and functionality with our customizable wardrobe options.
+                                </p>
+                                <button
+                                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                    More</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class=" h-full flex text-center p-5 bg-[#F4F4F4] m-4">
+            <div class="w-[40%] ] "
+                style=" background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(1); ">
+                <div class="flex  items-center justify-center ">
+                    <div class="">
+
+                        <div
+                            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                            <div class="h-96 w-auto">
+                                <img class="h-full w-full object-cover transition-transform duration-500  group-hover:scale-125"
+                                    src="https://images.unsplash.com/photo-1461151304267-38535e780c79?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                                <h1 class="font-dmserif text-3xl font-bold text-white">TV Unit Designs</h1>
+                                <p
+                                    class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    Upgrade your home theater setup with our versatile and innovative TV unit designs.
+                                </p>
+                                <button
+                                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                    More</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-[60%] h-full p-5 m-5 text-center ">
+
+                <h1 class="text-5xl mb-3">TV Unit Designs </h1>
+                <p class="">Step into the realm of sophistication with our stunning TV Unit Designs. <br> Crafted to
+                    perfection, each unit seamlessly combines style and functionality <br> to enhance your viewing
+                    experience. Elevate your entertainment space with our <br> exquisite designs that redefine luxury
+                    and convenience</p>
+                <div class="show_m mt-5">
+                    <button
+                        class="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5">See
+                        More</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- Footer container -->
+    <footer class="bg-[#F3F3F3] text-center text-surface/75   lg:text-left "
+        style=" background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size:auto; background-position: center; filter: brightness(0.8);">
+
+
+
+        <div class="mx-6 py-10 text-center md:text-left">
+            <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- TW Elements section -->
+                <div class="">
+                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                        <span class="me-3 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                            </svg>
+                        </span>
+                        Adhunik WoodPecker
+                    </h6>
+                    <p>
+                        The Adhunik WoodPecker is driven by the principles of creativity, originality, consideration and
+                        enthusiasm.
+                    </p>
+                </div>
+                <!-- Products section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        INFORMATIONS
+
+                    </h6>
+
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                                <path
+                                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                            </svg>
+                        </span>
+                        DCG1-0102, Tower-1, DLF CORPORATE GREENS, Sector 74A, Gurugram, Haryana 122004
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        08287885885
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </span>
+                        adhunikcooling.com
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        Mon-Sat: 09:30 - 18:00
+                    </p>
+
+                </div>
+                <!-- Useful links section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        USEFUL INFORMATION
+                    </h6>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Architecture</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Commercial</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Residential</a>
+                    </p>
+
+                </div>
+                <!-- Contact section -->
+                <div class="justify-center   ">
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        Get connected with us <br> on social networks:
+                    </h6>
+
+                    <p class="mb-4 flex items-center justify-center md:justify-start mx-auto">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg>
+                        </a>
+
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 488 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                            </svg>
+                        </a>
+
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="bg-black/5 p-6 text-center">
+            <span>© 2024 Copyright:</span>
+            <a class="font-semibold" href="https://tw-elements.com/"> Adhunik WoodPecker</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+
+        function homepageAnimation() {
+
+            gsap.set(".slidesm", {
+                scale: 5,
+            })
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".home",
+                    start: "top top",
+                    end: "bottom top",
+                    pin: true,
+
+                    scrub: 1,
+                },
+            })
+            tl.to(".vdodiv", {
+                '--clip': "0%",
+                ease: Power2,
+
+            }, "a")
+
+            tl.to(".slidesm", {
+                scale: 1,
+                ease: Power2,
+
+            }, "a")
+
+            tl.to(".lft", {
+                xPercent: -30,
+                stagger: .03,
+                ease: Power4,
+
+            }, 'b')
+            tl.to(".rgt", {
+                xPercent: 30,
+                stagger: .03,
+                ease: Power4,
+
+            }, 'b')
+
+
+        }
+        homepageAnimation()
+
+        gsap.to(".slide", {
+            scrollTrigger: {
+                trigger: ".real",
+                start: "top 20%", // Adjust the percentage value as needed
+                end: "top 40%",
+                markers: false,
+            },
+            xPercent: -200,
+            ease: Power4
+        })
+
+        document.querySelectorAll('.section').forEach(function (e) {
+            ScrollTrigger.create({
+                trigger: e,
+                start: "top 50%",
+                end: "top 50%",
+                markers: false,
+                onEnter: function () {
+                    document.body.setAttribute('theme', e.dataset.color);
+                },
+                onEnterBack: function () {
+                    document.body.setAttribute('theme', e.dataset.color);
+                }
+            });
+        });
+
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+</body>
+
+</html>
